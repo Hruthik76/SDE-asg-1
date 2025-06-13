@@ -47,3 +47,22 @@
    ![image](https://github.com/user-attachments/assets/6ee7fa53-643e-4755-a0cf-635f1cd583b7)
    ![image](https://github.com/user-attachments/assets/b57f886d-0286-4eca-a203-7f04a09b8fa5)
 
+### Part 4: Putting It All Together (Advanced)
+
+1. **[Hard]** Write a function called `getHighAchievers`. This function should accept two arguments: an array of student objects and a `passingScore` number. Each student object will look like this: `{ id: 1, name: 'Alice', score: 85 }`.
+    - The function should **filter** the students to get only those with a score greater than or equal to `passingScore`.
+    - It should then use **map** to return a new array containing only the names of the high-achieving students, in all uppercase letters.
+    - Example: `getHighAchievers(students, 80)` might return `["ALICE", "BOB"]`.
+    - ![image](https://github.com/user-attachments/assets/2a3e980a-9ae5-492d-b275-2369cb873ced)
+      ![image](https://github.com/user-attachments/assets/e2fbcd14-6a83-4e52-89fa-d103d2967e1d)
+
+2. **[Hard]** Write a function called `createGame`.
+    - This function should not take any arguments.
+    - Inside `createGame`, create a "private" variable called `secretNumber` and assign it a random number between 1 and 10.
+    - `createGame` should **return another function**. Let's call this inner function `guess`.
+    - The returned `guess` function should accept one argument, a number.
+    - When you call `guess`, it should compare the guessed number to the `secretNumber` it remembers (this is a **closure**!).
+    - It should log "You guessed it!", "Too high!", or "Too low!".
+    - Test it:
+   ![image](https://github.com/user-attachments/assets/0d894940-622a-4398-9077-dbdfcfa491cf)
+   ![image](https://github.com/user-attachments/assets/f9d3e28e-e835-4037-b0bf-f9cf41c45a38)
