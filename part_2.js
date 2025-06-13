@@ -31,3 +31,9 @@ let score = [25, 80, 45, 95, 60, 75];
 let average = score.reduce(function(){
     
 })
+
+const fruits = ["apple", "banana", "cherry"];
+
+fruits.forEach(function(fruit, index) {
+  console.log(`Fruit at index ${index} is ${fruit}`);
+});
